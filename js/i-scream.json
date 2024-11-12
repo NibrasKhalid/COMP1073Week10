@@ -17,14 +17,25 @@
       },
       {
         "name" : "Strawberry Sprinkles",
-        "calories" : 1400,
+        "calories" : 800,
         "type" : "Sundae",
         "ingredients" : [
           "strawberry slices",
           "whipped cream",
-          "strawberry milkshake"
+          "strawberry Banana milkshake"
         ],
         "image" : "strawberry-sprinkle.svg"
+      },
+      {
+        "name" : "Chocolate Pecan Oat Crunch",
+        "calories" : 1200,
+        "type" : "ice cream",
+        "ingredients" : [
+          "Chocolate Ice Cream",
+          "Toasted Cinnamon Oats",
+          "Crushed Pecans"
+        ],
+        "image" : "ice-cream-xtra2.svg"
       },
       {
         "name" : "Perfect Peach Mango",
