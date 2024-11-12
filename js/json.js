@@ -8,7 +8,7 @@ async function populate(params) {
 
     // Introducing JavaScript Object Notation (JSON): https://json.org/
     // STEP 4: Store the URL of a JSON file in a variable */
-    const requestURL = "";
+    const requestURL = "https://nibraskhalid.github.io/COMP1073Week10/";
     // STEP 5: Use the new URL to create a new request object
     const request = new Request(requestURL);
     // STEP 6: Make a network request with the fetch() function, which returns a Response object
@@ -43,7 +43,10 @@ function showTopFlavors() {
     // STEP 10d: Loop through the topFlavors object
     for (let i = 0; i < topFlavors.length; i ++) {
         // STEP 10e: build HTML elements for the content
-        
+        let article = document.createElement("article");
+        let h2 = document.createElement("h2");
+        let image = document.createElement("img");
+        let p=ul = document.createElement("ul");
 
         // STEP 10f: Set the textContent property for each of the above elements (except the UL), based on the JSON content
         
