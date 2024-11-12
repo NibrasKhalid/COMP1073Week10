@@ -53,14 +53,20 @@ function showTopFlavors() {
         image.setAttribute("src", "https://nibraskhalid.github.io/COMP1073Week10/images")
 
         // STEP 10g: Build a loop for the ingredients array in the JSON
-        let ingredients =  topFlavors[i]["ingredients"];
-        // for(let i=0; i < )
+        for(let j=0;j<ingredients.length;j++){
+            let listItem = document.createElement("li");
+            listItem.textContent = ingredients[j];
             // add the ingredient to the UL
-
+            ul.appendChild(listItem);
+        }
+            
+        
         // STEP 10h: Append each of the above HTML elements to the ARTICLE element
-        
+        article.appendChild(h2);
+        article.appendChild(image);
+        article.appendChild(ul);
         // STEP 10i: Append each complete ARTICLE element to the SECTION element
-        
+        section.appendChild(article);
     };
 };
 // STEP 11: The instructor will edit the JSON file - refresh your page to see the updated content
