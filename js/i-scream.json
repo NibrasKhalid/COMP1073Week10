@@ -16,6 +16,17 @@
         "image" : "chocolate-mint.svg"
       },
       {
+        "name" : "Strawberry Sprinkles",
+        "calories" : 1400,
+        "type" : "Sundae",
+        "ingredients" : [
+          "strawberry slices",
+          "whipped cream",
+          "strawberry milkshake"
+        ],
+        "image" : "strawberry-sprinkle.svg"
+      },
+      {
         "name" : "Perfect Peach Mango",
         "calories" : 350,
         "type" : "sorbet",
