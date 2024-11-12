@@ -3,7 +3,7 @@ const header = document.querySelector("header");
 const section = document.querySelector("section");
 
 // STEP 3a: Create the asynchronous function populate()
-async function populate(params) {
+async function populate() {
     
 
     // Introducing JavaScript Object Notation (JSON): https://json.org/
@@ -21,7 +21,6 @@ async function populate(params) {
     populateHeader(iScream);
     // STEP 10a: Invoke the showTopFlavors function here, then build it below
     showTopFlavors(iScream);
-
 }
 // STEP 3b: Call the populate() function
 
@@ -29,28 +28,28 @@ populate();
 /* STEP 9b: Build out the populateHeader() function */
 function populateHeader(jsonObj) {
     // Create the H1 element
-    const headrH1 = document.createElement("h1");
+    const headerH1= document.createElement("h1");
     // Grab the company name from the JSON object and use it for the text node
-    headrH1.textContent = jsonObj.companyName;
+    headerH1.textContent = jsonObj.companyName;
+
     // Inject the complete H1 element into the DOM, inside the HEADER
-    header.append(headrH1);
+    header.appendChild(headerH1);
 };
 /* STEP 10b: Assemble the showTopFlavors() function */
-function showTopFlavors() {
+function showTopFlavors(jsonObj) {
     // STEP 10c: Attache the JSON topFlavors object to a variable
     let topFlavors = jsonObj.topFlavors;
-    console.log(topFlavors);
+    //console.log(topFlavors);
     // STEP 10d: Loop through the topFlavors object
     for (let i = 0; i < topFlavors.length; i ++) {
         // STEP 10e: build HTML elements for the content
-        let article = document.createElement("article");
-        let h2 = document.createElement("h2");
-        let image = document.createElement("img");
-        let p=ul = document.createElement("ul");
-
+    let article= document.createElement("article");
+    let h2 = document.createElement("h2");
+    let image = document.createElement("img");
+    let ul = document.createElement("ul");
         // STEP 10f: Set the textContent property for each of the above elements (except the UL), based on the JSON content
         h2.textContent = topFlavors[i][name];
-        image.setAttribute("src", "https://nibraskhalid.github.io/COMP1073Week10/images")
+        image.setAttribute("src", "https://nibraskhalid.github.io/COMP1073Week10/images/" + topFlavors[i].image);
 
         // STEP 10g: Build a loop for the ingredients array in the JSON
         for(let j=0;j<ingredients.length;j++){
