@@ -48,9 +48,9 @@ function showTopFlavors(jsonObj) {
     let image = document.createElement("img");
     let ul = document.createElement("ul");
         // STEP 10f: Set the textContent property for each of the above elements (except the UL), based on the JSON content
-        h2.textContent = topFlavors[i][name];
+        h2.textContent = topFlavors[i]["name"];
         image.setAttribute("src", "https://nibraskhalid.github.io/COMP1073Week10/images/" + topFlavors[i].image);
-
+        let ingredients = topFlavors[i].ingredients
         // STEP 10g: Build a loop for the ingredients array in the JSON
         for(let j=0;j<ingredients.length;j++){
             let listItem = document.createElement("li");
